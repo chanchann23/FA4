@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+ }
+ header {
+    background-color: #640000;
+    color: rgb(252, 252, 252);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .logo {
+    height: 130px;
+ }
+ nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+ }
+ nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+ }
+ nav a:hover {
+    background-color: #555;
+ }
+ .container {
+    display: flex;
+    margin: 20px;
+ }
+ .sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+ }
+ .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+ }
+ .sidebar li {
+    margin-bottom: 10px;
+ }
+ .sidebar a {
+    text-decoration: none;
+    color: #333;
+ }
+ main {
+    width: 50%;
+    padding: 20px;
+ }
+ .gallery-scroll {
+   display: flex;
+   overflow-x: auto;
+   gap: 20px;
+   padding: 10px;
+   scroll-behavior: smooth;
+}
+.gallery-scroll::-webkit-scrollbar {
+   height: 10px;
+}
+.gallery-scroll::-webkit-scrollbar-thumb {
+   background-color: #888;
+   border-radius: 5px;
+}
+.gallery-scroll::-webkit-scrollbar-track {
+   background-color: #eee;
+}
+.item {
+   flex: 0 0 auto; 
+   width: 500px;
+   border: 1px solid #ccc;
+   padding: 10px;
+   background: #fff;
+}
+.item img {
+   width: 50%;
+   height: auto;
+   display: block;
+   margin-bottom: 10px;
+}
+ footer {
+    background-color: #520000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+ }
